@@ -1,0 +1,8 @@
+@media(min-width:768px){
+body{
+    background: #000;
+    }
+header{
+    background: #ff0;
+}
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/plc_bulboff.png" alt="Lâmpada" id="lampada" onclick="trocar()">
+    <script>
+        function trocar(){
+            var lamp = document.getElementById("lampada");
+            if(lamp.src.match(" bulbon ")){
+
+            }
+            else{
+                lamp.src = "img/plc_bulbon.png";
+            }
+        }
+    </script>
+</body>
+</html>

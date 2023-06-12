@@ -1,0 +1,22 @@
+#wrapper{
+	width:1100px;
+	height:1100px;
+	border:1px solid #000;
+	padding-right:100px;
+	
+}
+nav{
+	width:140px;
+	height:150px;
+	border:1px solid #000;
+	background-color:#000;
+	float:right;
+}
+.produto{
+	width:100px;
+	height:25px;
+	border:1px solid #000;
+	background-color:#000;
+	float:rigth;
+
+}

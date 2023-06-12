@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/funcoes.js"></script>
+</head>
+<body>
+    <form>
+        <label for="txtNOME">Nome:</label>
+        <input type="text" name="txtNOME" id="txtNOME" required>
+        <br>
+        <label for="txtNUM">Telefone:</label>
+        <input type="txt" name="txtDTN" id="txtDTN" onkeydown="Mascara()" onkeyup="SomenteNumeros()" required>
+        <br>
+        <label for="txtCPF">CPF:</label>
+        <input type="tel" name="txtCPF" id="txtCPF" onkeydown="Mascara()" onkeyup="return SomenteNumeros(event)" required>
+    </form>
+</body>
+</html>

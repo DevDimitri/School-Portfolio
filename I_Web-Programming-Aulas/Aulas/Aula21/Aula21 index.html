@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+		<script>
+            function tabuada(){
+                num = document.frmTab.txtTab.value;
+                resp = "";
+                for(i=1;i<=10;i++){
+                    resp = resp + i + " * " + num + " = " + i * num + "<br>";
+                }
+                document.getElementById("result").innerHTML = resp;
+            }
+		</script>
+	</head>
+	<body>
+        <h1>Tabuada</h1>
+        <form name="frmTab" id="frmTab">
+          <label for="frmTab">Tabuada: </label>
+          <input type="text" name="txtTab" id="txtTab" placeholder="Digite um Valor">
+          <input type="button" onclick="tabuada()" value="Calcular">
+        </form>
+        <div id="result" collor="red"></div>
+	</body>
+</html>

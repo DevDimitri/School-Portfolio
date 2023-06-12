@@ -1,0 +1,28 @@
+nav{
+	width:150px;
+	height:279px;
+	border:1px solid #000;
+}
+nav ul{
+	list-style-type:none;
+	margin:0px; /* margem externa */
+	padding:0px; /* margem  interna */
+}
+nav ul li{
+	border-bottom:1px solid #000;
+	height:27px;
+	line-height:28px;
+	background: #FFFF00;
+}
+nav ul li a{
+	text-decoration:none;
+	padding-left:20px;
+	border-left:5px solid #ff0000;
+	display:block;
+}
+nav ul li a:hover{
+	background:#f00;
+	border-left:5px solid #000;
+}nav ul li:last-child{
+	border-bottom:0px;
+}

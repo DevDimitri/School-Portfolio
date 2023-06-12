@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+		<script>
+
+            function boasVindas(){
+                // programação obstrutiva
+                // var nome = document.frmCad.txNome.value
+                // programação não-obstrutiva
+                var nome = document.frmCad.txtNome;
+                if(nome.value == ""){
+                    alert("Campo Nome em branco!");
+                    nome.focus();
+                    return false;
+                }
+                else{alert("Olá " + nome.value + ", seja bem vindo");
+
+                }
+            }
+        
+		</script>
+	</head>
+	<body>
+        <form name="frmCad">
+            <input type="text" name="txtNome">
+            <button onclick="return boasVindas()">Clique aqui!!</button>
+        </form>
+	</body>
+</html>
