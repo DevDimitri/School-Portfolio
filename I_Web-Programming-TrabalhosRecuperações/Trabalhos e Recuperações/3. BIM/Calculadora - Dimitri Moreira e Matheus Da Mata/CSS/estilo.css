@@ -1,0 +1,46 @@
+#visor{
+	font-family:Arial, Helvetica, sans-serif;
+	color:black;
+	width:180;
+	height:70px;
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	background-color:#c4f8ff;
+	text-align:center;
+}
+table{
+	margin:0 auto 0 auto;
+}
+form fieldset{
+	margin:50px auto auto auto; 
+	width:200px;
+	border:solid black 1px;
+	background-color: black;
+	border-radius:10px;
+	margin-bottom:10px;
+}
+form input{
+	width:100%;
+	font-size:50px;
+	font-family: montserrat;
+	color: white;
+	margin-bottom:10px;
+	background-color: black;
+}
+form input:hover{
+	background-color: rgb(0, 63, 63) ;
+}
+form input.num{
+	display:block;
+	margin:5px;
+	width:80px;
+	height:80px;
+}
+form input.oper{
+	border-radius:5px;
+	display:block;
+	margin:5px;
+	width:60px;
+	height:60px;
+	background-color:rgb(0, 18, 180);
+}

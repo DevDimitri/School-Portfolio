@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Cadastro de Empresa</title>
+    <script>
+        function logar(){
+            var key = document.getElementById('key').value;
+            var confkey = document.getElementById('confkey').value;
+            if(key == key && confkey == key){
+                alert('Cadastro efetuado');	
+            }
+			else{
+                alert('Senhas diferentes!');
+            }
+        }
+    </script>
+</head>
+<body>
+	<header id="cabecalho">Sistema de Gerencianento de Empresas</header>
+    <div id="formulario">
+        <h1>Cadastrar Empresa</h1>
+        <hr>
+			<label for="txtCODE"><h6>Código</h6></label>
+			<input type="text" name="txtCODE" class="txtCODE" required>
+			<label for="txtTE"><h6>Tipo de Empresa</h6></label>
+			<input type="text" name="txtTE" class="txtTE" required>
+			<label for="txtCRT"><h6>CRT</h6></label>
+			<input type="text" name="txtCRT" class="txtCRT" required>
+			<label for="txtCNPJ"><h6>CNPJ</h6></label>
+			<input type="text" name="txtCNPJ" class="txtCNPJ" required>
+			<label for="txtIE"><h6>Insc. Est.</h6></label>
+			<input type="text" name="txtIE" class="txtIE" required>
+			<label for="txtIM"><h6>Insc. Municipal</h6></label>
+			<input type="text" name="txtIM" class="txtIM" required>
+			<label for="txtNF"><h6>Nome Fantasia</h6></label>
+			<input type="text" name="fullname" class="txtNF" required>
+			<label for="txtRS"><h6>Razão Social<h6></label>
+			<input type="text" name="txtRS" class="txtRS" required>
+			<label for="txtCEP"><h6>CEP</h6></label>
+			<input type="text" name="txtCEP" class="txtCEP" required>
+			<label for="txtEND"><h6>Endereço</h6></label>
+			<input type="text" name="txtEND" class="txtEND" required>
+			<label for="txtNUM"><h6>Número</h6></label>
+			<input type="text" name="txtNUM" class="txtNUM" required>
+			<label for="txtCOMP"><h6>Complemento</h6></label>
+			<input type="text" name="txtCOMP" class="txtCOMP" required>
+			<label for="txtBR"><h6>Bairro</h6></label>
+			<input type="text" name="txtBR" class="txtBR" required>
+			<label for="txtCDD"><h6>Cidade</h6></label>
+			<input type="text" name="txtCDD" class="txtCDD" required>
+			<label for="selEST"><h6>Estado</h6></label>
+			<select class="selEST" >
+				<option>Acre (AC)</option>
+				<option>Alagoas (AL)</option>
+				<option>Amapá (AP)</option>
+				<option>Amazonas (AM)</option>
+				<option>Bahia (BA)</option>
+				<option>Ceará (CE)</option>
+				<option>Distrito Federal (DF)</option>
+				<option>Espírito Santo (ES)</option>
+				<option>Goiás (GO)</option>
+				<option>Maranhão (MA)</option>
+				<option>Mato Grosso (MT)</option>
+				<option>Mato Grosso do Sul (MS)</option>
+				<option>Minas Gerais (MG)</option>
+				<option>Pará (PA)</option>
+				<option>Paraíba (PB)</option>
+				<option>Paraná (PR)</option>
+				<option>Pernambuco (PE)</option>
+				<option>Piauí (PI)</option>
+				<option>Rio de Janeiro (RJ)</option>
+				<option>Rio Grande do Norte (RN)</option>
+				<option>Roraima (RR)</option>
+				<option>Rio Grande do Sul (RS)</option>
+				<option>Rondônia (RO)</option>
+				<option>Santa Catarina (SC)</option>  
+				<option>Sergipe (SE)</option>
+				<option>São Paulo (SP)</option>
+				<option>Tocantins (TO)</option>
+			</select>
+			<label for="txtRESP"><h6>Responsável</h6></label>
+			<input type="text" name="txtRESP" class="txtRESP" required>
+			<label for="txtEM"><h6>E-mail</h6></label>
+			<input type="email" name="emEM" class="txtEM" required>
+			<label for="txtTEL"><h6>Telefone</h6></label>
+			<input type="text" name="txtTEL" class="txtTEL" required>
+			<label for="txtFAX"><h6>Fax</h6></label>
+			<input type="text" name="txtFAX" class="txtFAX" required>
+			<label for="dtDTC"><h6>Data de Criação</h6></label>
+			<input type="date" name="dtDTC" class="dtDTC" required>
+			<label for="txtSNH"><h6>Senha</h6></label>
+			<input type="password" name="txtSNH" id="key" class="txtSNH" required>
+			<label for="txtCNFS"><h6>Confirmação de Senha</h6></label>
+			<input type="password" name="txtCNFS" id="confkey" class="txtCNFS" required>
+			<h6>Tipo de Empresa</h6>
+				<label for="slcTE"></label>
+				<input type="radio" name="slcSEL" class="txtSEL" required><p>Sociedade Empresária Limitada</p>
+				<label for="slcMEI"></label>
+				<input type="radio" name="txtMEI" class="txtMEI" required><p>MEI</p>
+				<label for="slcSS"></label>
+				<input type="radio" name="txtSS" class="txtSS" required><p>Sociedade Simples</p><br>
+			<h6>Ramo de Atuação</h6>
+				<label for="slcRA"></label>
+				<input type="checkbox" name="" class="slcSEL" required><p>Internet</p>
+				<label for="slcMEI"></label>
+				<input type="checkbox" name="slcMEI" class="slcMEI" required><p>Confecção</p>
+				<label for="slcSS"></label>
+				<input type="checkbox" name="slcSS" class="slcSS" required><p>Metalúrgica</p><br>
+			<input type="submit" onclick="logar(); return false" class="selCAD" value="Cadastrar Empresa" required>
+		</form>	
+    </div>
+    <footer id="rodape">©Todos os Direitos Reservados</footer>
+</body>
+</html>

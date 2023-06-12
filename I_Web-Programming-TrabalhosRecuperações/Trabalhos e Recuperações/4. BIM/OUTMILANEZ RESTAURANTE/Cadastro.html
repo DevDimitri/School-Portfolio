@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/restaurante_estilo.css">
+    <script defer>
+        function logar(){
+            var psw = document.getElementById('psw').value;
+            var pswrepeat = document.getElementById('psw-repeat').value;
+            if(psw == psw && pswrepeat == psw){
+                alert('Cadastro efetuado');	
+            }
+			else{
+                alert('Senhas diferentes!');
+            }
+        }
+    </script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="img/logo-churrascaria.png" alt="LOGO">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="restaurante.html">Restaurante</a></li>
+                <li><a href="promoçoes.html">Promoções</a></li>
+                <li><a href="vale-presente.html">Vale-Presente</a></li>
+                <li><a href="cadastro.html"><img src="img/user_icon 120x120.png" id="usericon"></img></a></li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        <div class="cadlocal">
+      
+          <label for="email"><p>Email</p></label>
+          <input type="text" placeholder="Digite seu Email" name="email" id="email" required>
+      
+          <label for="psw"><p>Senha</p></label>
+          <input type="password" placeholder="Digite a Senha" name="psw" id="psw" required>
+      
+          <label for="psw-repeat"><p>Repeat Password</p></label>
+          <input type="password" placeholder="Repita a Senha" name="psw-repeat" id="psw-repeat" required>
+      
+          <button type="submit" class="registerbtn" onclick="logar(); return false" required>Registre-se</button>
+        </div>
+        <ol>
+            <li>
+                <a href="Login.html" class="entrar"><p>Já possui cadastro? Entrar</p></a></li>
+            </li>
+        </ol>
+      </form>
+    <div class="rodape">
+        <div id="rodapetd">
+            <div class="conteiners3"><img src="img/5-icons8-headphones-64.png"></img>
+            </div>
+            <div class="conteiners"><ul>Contato: <br> outmilanez@out.com.br</ul>
+            </div>
+            <div class="conteiners3"><img src="img/8-icons8-chat-room-30.png"></img>
+            </div>
+            <div class="conteiners"><ul>Telefone: <br> (11) 3304-2384</ul>
+            </div>
+            <div class="conteiners3"><img src="img/2-icons8-whatsapp-30.png">
+            </div>
+            <div class="conteiners"><ul>Whatsapp: <br> (11) 98670-4823</ul>
+            </div>
+            <div class="conteiners2"><img src="img/1-icons8-facebook-50.png"></img>
+            </div>
+            <div class="conteiners2"><img src="img/0-icons8-whatsapp-50.png"></img>
+            </div>
+            <div class="conteiners2"><img src="img/3-icons8-instagram-50.png"></img>
+            </div>
+            <div class="conteiners3"><img src="img/4-icons8-calendar-50.png"></img>
+            </div>
+            <div class="conteiners"><ul>Funcionamento:</ul>
+            </div>
+            <div class="conteiners3"><img src="img/7-icons8-sand-timer-30.png"></img>
+            </div>
+            <div class="conteiners"><ul>De Segunda a Domingo</ul>
+            </div>
+            <div class="conteiners3"><img src="img/8-icons8-chat-room-30.png"></img>
+            </div>
+            <div class="conteiners"><ul>Das 8:00 as 22:00</ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

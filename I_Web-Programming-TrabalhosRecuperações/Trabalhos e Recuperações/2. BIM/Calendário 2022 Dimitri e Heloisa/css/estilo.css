@@ -1,0 +1,71 @@
+nav{
+	width:135px;
+	height:770px;
+	margin:50px 0px 0px 120px;
+	float:left;
+}
+nav ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+nav ul li a{
+	width:130px;
+	height:27px;
+	margin-bottom:33px;
+	font-family:arial;
+	color:#FA6600;
+	text-align:center;
+	text-decoration:none;
+	float:left;
+}
+nav ul li a:hover{
+	background:#0BD0E6;
+	border-radius:4px;
+	border-left:10px solid #FFFF00;
+}
+nav ul li:last-child{
+	border-bottom:1px;
+}
+body{
+	background-color:#87CEEB;
+}
+#mes{
+	width:810px;
+	height:600px;
+	margin:20px 0px 0px 200px;
+	font-family:arial;
+	text-align:center;
+	float:left;
+}
+.festas{
+	width:790px;
+	height:100px;
+	margin:20px 0px 0px 0px;
+	font-family:verdana;
+	border-radius:30px;
+	border:10px solid #8FFFA2;	
+	float:left;
+}
+.data,.semana,.diamspssd,.diamssgnt{
+	width:95px;
+	height:55px;
+	border:1px solid #FFF;
+	float:left;
+	font-size:20px;
+	border-radius:10px;
+	margin:9px 8px 8px 10px;
+	text-align:center;
+}
+.semana{
+	background:#4169E1;
+	border:1px solid #74F2DA;
+}
+.diamspssd{
+	background:#B0C4DE;
+	border:1px solid #74F2DA;
+}
+.diamssgnt{
+	background:#B0C4DE;
+	border:1px solid #74F2DA;
+}

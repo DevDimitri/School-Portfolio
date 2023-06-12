@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+		<title>Calculadora Dimitri - Matheus</title>
+			<script>
+				function CalcNum(num){
+					if (typeof gvisor == 'undefined'){
+						document.Calcfrm.visor.value = '';
+					}
+					document.Calcfrm.visor.value = document.Calcfrm.visor.value + num;
+					gvisor = 1;
+				}
+				function CalcLimpar(){
+					document.Calcfrm.visor.value = '';
+					delete gvalor;
+					delete goper;
+					delete gvisor;
+				}
+				function calcOper(oper, valor1, valor2){
+					if (oper == "somar"){
+						var valor = parseFloat(valor1) + parseFloat(valor2);
+					} 
+					else{
+						if(oper == "subtrair"){
+						var valor = valor1 - valor2;
+						}
+						else{
+							if(oper == "multiplicar"){
+							var valor = valor1 * valor2;
+							}
+							else{
+								var valor = valor1 / valor2;
+							}
+						}
+					}
+					return(valor);
+				}
+				function CalcParse(oper){
+					var valor = document.Calcfrm.visor.value;
+					delete gvisor;
+					if(typeof goper != 'undefined' && oper == 'resultado'){
+						gvalor = calcOper(goper, gvalor, valor);
+						document.Calcfrm.visor.value = gvalor;
+						delete oper;
+						delete gvalor;
+						return(0);
+					}
+					if(typeof gvalor != 'undefined'){
+						gvalor = calcOper(goper, gvalor, valor);
+						goper = oper;
+						document.Calcfrm.visor.value = gvalor;
+					}
+					else{
+						gvalor = valor;
+						goper = oper;
+					}
+				}
+			</script>
+	</head>
+	<body background="img/background-numeros.png">
+		<form name="Calcfrm" id="Calcfrm" method="post">
+			<fieldset>
+			<input type="text" name="visor" id="visor"/>
+			<table id="calc">
+				<tr>
+				<td><input type="button" name="num9" class="num" value="9" onclick="CalcNum(9)" /></td>
+				<td><input type="button" name="num8" class="num" value="8" onclick="CalcNum(8)" /></td>
+				<td><input type="button" name="num7" class="num" value="7" onclick="CalcNum(7)" /></td>
+				<td><input type="button" name="somar" class="oper" value="+" onclick="CalcParse('somar')" /></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="num6" class="num" value="6" onclick="CalcNum(6)" /></td>
+				<td><input type="button" name="num5" class="num" value="5" onclick="CalcNum(5)" /></td>
+				<td><input type="button" name="num4" class="num" value="4" onclick="CalcNum(4)" /></td>
+				<td><input type="button" name="subtrair" class="oper" value="-" onclick="CalcParse('subtrair')" /></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="num3" class="num" value="3" onclick="CalcNum(3)" /></td>
+				<td><input type="button" name="num2" class="num" value="2" onclick="CalcNum(2)" /></td>
+				<td><input type="button" name="num1" class="num" value="1" onclick="CalcNum(1)" /></td>
+				<td><input type="button" name="multiplicar" class="oper" value="*" onclick="CalcParse('multiplicar')" /></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="num0" class="num" value="0" onclick="CalcNum(0)" /></td>
+				<td><input type="button" name="igual" class="num" value="=" onclick="CalcParse('resultado')" /></td>
+				<td><input type="button" name="limpar" class="num" value="AC" onclick="CalcLimpar()" /></td>
+				<td><input type="button" name="dividir" class="oper" value="/" onclick="CalcParse('dividir')" /></td>
+			</tr>
+			</table>
+			</fieldset>
+		</form>
+	</body>
+</html>

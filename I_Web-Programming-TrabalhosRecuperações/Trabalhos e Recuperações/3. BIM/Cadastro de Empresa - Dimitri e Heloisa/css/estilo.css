@@ -1,0 +1,71 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+}
+#cabecalho{
+    width: auto;
+    height: 36px;
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: blue;
+}
+#formulario{
+    width: 925px;
+    height: 1360px;
+    margin: auto;
+    padding: 1%;
+}
+#rodape{
+    width: auto;
+    height: 29px;
+    padding: 1px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: blue;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    color: blue;
+}
+h6{
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+hr{
+    border: solid 1px blue;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+.txtCODE,.txtTE,.txtCRT,.txtCNPJ,.txtIE,.txtIM,.txtNF,.txtRS,.txtCEP,.txtEND,.txtNUM,.txtCOMP,.txtBR,.txtCDD,.selEST,.txtRESP,.txtEM,.txtTEL,.txtFAX,.dtDTC,.txtSNH,.txtCNFS{
+    width: 920px;
+    height: 25px;
+	float: float;
+    border: solid 1px gray;
+    border-radius: 4px;
+}
+.txtCNFS{
+	margin: 0px 0px 20px 0px;
+}
+.selEST,.dtDTC{
+	width: 924px;
+	height: 31px;
+}
+.selCAD{
+	width: 140px;
+	height: 27px;
+	float: right;
+	color: white;
+	font-family: Arial;
+	border: solid 1px blue;
+	border-radius: 4px;
+	background-color: blue;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELIVERY</title>
+    <link rel="stylesheet" href="CSS/delivery.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="img/logo-churrascaria.png" alt="LOGO">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="restaurante.html">Restaurante</a></li>
+                <li><a href="promoçoes.html">Promoções</a></li>
+                <li><a href="vale-presente.html">Vale-Presente</a></li>
+            </ul>
+        </nav>    
+    </header> 
+
+    <h1 id="titledelivery">PEÇA O SEU PEDIDO</h1>
+
+    <div id="cardapio">
+        <p class="title-informacoes">SELECIONE O SEU ITEM</p>
+        <ol id="menu">APERITIVOS:
+            <br>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li> 
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+        </ol>
+        <ol id="menu">STEAKS:
+            <br>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li> 
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+        </ol>
+        <ol id="menu">SALADAS:
+            <br>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li> 
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+        </ol>
+        <ol id="menu">ACOMPANHAMENTOS:
+            <br>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li> 
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+        </ol>
+        <ol id="menu">SOBREMESAS:
+            <br>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li> 
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+            <li class="checkmenu"><input type="checkbox" name="check" value="chechkmenu">
+                <label for="espeto">AS</label>
+            </li>
+        </ol>
+    </div>
+
+    <div id="endereço">
+        <p class="title-informacoes">INSIRA AS INFORMAÇÕES:</p>
+
+        <div id="secao1">
+            <label for="cep" class="nameform"><b>CEP:</b></label>
+            <input type="text" name="bairro" id="bairro" required>
+    
+            <label for="rua" class="nameform"><b>Rua:</b></label>
+            <input type="text" name="rua" id="rua" required>
+    
+            <label for="bairro" class="nameform"><b>Bairro:</b></label>
+            <input type="text" name="bairro" id="bairro" required>
+        </div>
+        
+        <form>
+            <label for="numero" class="nameform"><b>Número:</b></label>
+            <input type="number" name="numero" id="numero" required>
+     
+            <label for="cidade" class="nameform"><b>Cidade:</b></label>
+            <input type="text" name="cidade" id="cidade" required>
+
+            <label for="estado" class="nameform"><b>Estado:</b>
+            <select name="estados-brasil">
+                
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select> 
+            </label>
+        </form>
+         
+    </div>
+    <button type="submit" class="registerbtn">ENVIAR PEDIDO</button>
+</body>
+</html>

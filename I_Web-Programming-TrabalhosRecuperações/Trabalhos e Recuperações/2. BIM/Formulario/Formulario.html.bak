@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<title>Formulario</title>
+	</head>
+		<body>
+			<hr>
+			<h1>Formulário de Cadastro</h1>
+			<hr>
+			<br>
+			<form name="frmCad" id="frmCad">
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+				<label for="txtNOME">Nome:</label>
+				<input type="text" name="txtNOME" 
+				id="txtNOME" class="frmcampo" placeholder=
+				"Digite seu Nome" required>
+				<font color="red">*</font>
+				<br>
+				<br>
+				<label for="txtDTN">Data de Nascimento:</label>
+				<input type="date" name="txtDTN" 
+				id="txtDTN" required>
+				<font color="red">*</font>
+				<br>
+				<br>
+				<label for="txtCPF">CPF:</label>
+				<input type="text" name="txtCPF"
+				id="txtCPF" placeholder=
+				"Digite seu CPF" required>
+				<font color="red">*</font>
+				<br>
+				<br>
+				<label for="txtRG">RG:</label>
+				<input type="text" name="txtRG"
+				id="txtRG" placeholder=
+				"Digite seu RG" required>
+				<font color="red">*</font>
+				<br>
+				<br>
+				<label>Sexo:</label>
+				<label>
+				<br>
+				<input type="radio" name="MAS"
+				value="frontend">Masculino
+				</label>
+				<br>
+				<label>
+				<input type="radio" name="FEM"
+				value="frontend">Feminino
+				</label>
+			</fieldset>
+				<br>
+				<hr>
+			<fieldset>
+				<legend>Endereço</legend>
+				<label>Estado:</label>
+				<select id="EST">
+					<option>Acre (AC)</option>
+					<option>Alagoas (AL)</option>
+					<option>Amapá (AP)</option>
+					<option>Amazonas (AM)</option>
+					<option>Bahia (BA)</option>
+					<option>Ceará (CE)</option>
+					<option>Distrito Federal (DF)</option>
+					<option>Espírito Santo (ES)</option>
+					<option>Goiás (GO)</option>
+					<option>Maranhão (MA)</option>
+					<option>Mato Grosso (MT)</option>
+					<option>Mato Grosso do Sul (MS)</option>
+					<option>Minas Gerais (MG)</option>
+					<option>Pará (PA)</option>
+					<option>Paraíba (PB)</option>
+					<option>Paraná (PR)</option>
+					<option>Pernambuco (PE)</option>
+					<option>Piauí (PI)</option>
+					<option>Rio de Janeiro (RJ)</option>
+					<option>Rio Grande do Norte (RN)</option>
+					<option>Roraima (RR)</option>
+					<option>Rio Grande do Sul (RS)</option>
+					<option>Rondônia (RO)</option>
+					<option>Santa Catarina (SC)</option>  
+					<option>Sergipe (SE)</option>
+					<option>São Paulo (SP)</option>
+					<option>Tocantins (TO)</option>
+				</select>
+                <br>
+                <br>
+				<label for="txtEND">Endereço:</label>
+			    <input type="text" name="txtEND" id="txtEND" placeholder="Ex: Avenida Paulista, 1200" required>
+				<font color="red">*</font>
+				<br>
+				<br>
+				<label for="txtNUM">Número:</label>
+			    <input type="text" name="txtNUM"
+				id="txtNUM" placeholder="Ex: Casa 10, Apt 10" required>
+				<font color="red">*</font>
+			    <br>
+				<br>
+				<label for="txtCEP">CEP:</label>
+			    <input type="text" name="txtCEP" id="txtCEP" placeholder="Digite seu CEP " required>
+				<font color="red">*</font>
+				<br>
+				<br>
+				<label for="txtCOMP">Complemento:
+				</label>
+			    <input type="text" name="txtCOMP" id="txtCOMP" placeholder="Ex: Próximo a..." required>
+				<font color="red">*</font>  
+			</fieldset>
+	</body>
+</html>

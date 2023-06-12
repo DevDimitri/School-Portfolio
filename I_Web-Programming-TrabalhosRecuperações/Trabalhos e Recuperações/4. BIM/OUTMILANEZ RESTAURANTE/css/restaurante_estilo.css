@@ -1,0 +1,269 @@
+* {box-sizing: border-box}
+
+body{
+margin: 0%;
+padding: 0%;
+background-color: #3D0B04;
+}
+header{
+position: fixed;
+width: 100%;
+width: 100%;
+height: 140px;
+left: 0px;
+top: 0px;
+background-color: black;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+opacity: 0.9;
+display: flex;
+}
+.logo{
+width: 250px;
+height: 130px;
+margin: 0px 60px 0px 0px;
+float: left;
+}
+ul{
+margin: 30px 0px 0px 0px;
+padding:0;
+}
+li{
+list-style: none;
+margin: 20px;
+display: inline;
+font-family: system-ui;
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 48px;
+}
+li a{
+padding: 5px 10px; 
+margin:0; 
+text-decoration: none;
+color:#FFF;
+}
+li a:hover{
+color: #FF8E00; 
+}
+li a:hover{
+color: #FF8E00; 
+}
+#usericon{
+width: 40px;
+height: 40px;
+float: right;
+}
+#logo{
+width: 1635px;
+height: 775px;
+background-color: black;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1.3));
+}
+#fachadaOtM{
+width: 1440px;
+height: 670px;
+left: 0px;
+top: 1540px;
+}
+#fachadatitulo{
+margin: 100px 0px 0px 50px;
+padding: 0%;
+width: 440px;
+font-family: system-ui;
+font-size: 40px;
+color: #F0F0F0;
+}
+#fachadatxt,#cozinhatxt{
+margin: 0px 0px 0px 60px;
+padding: 0%;
+width: 440px;
+height: 400px;
+font-family: system-ui;
+color: #FC8C00;
+}
+#fachadaimg{
+margin: -505px 0px 0px 590px;
+width: 971px;
+height: 525px;
+border-radius: 15px;
+}
+#interiorOtM{
+width: 1440px;
+height: 670px;
+left: 0px;
+top: 1540px;
+background-color: #3D0B04;
+}
+#interiortitulo{
+margin: 100px 0px 0px 1150px;
+padding: 0%;
+width: 440px;
+font-family: system-ui;
+font-size: 40px;
+color: #F0F0F0;
+}
+#interiortxt{
+margin: 10px 0px 0px 1160px;
+width: 400px;
+height: 400px;
+font-family: system-ui;
+color: #FC8C00;
+}
+#interiorimg{
+margin: -545px 0px 0px 70px;
+width: 960px;
+height: 525px;
+border-radius: 15px;
+}
+#cozinhaOtM{
+width: 1440px;
+height: 670px;
+left: 0px;
+top: 1540px;   
+}
+#cozinhatitulo{
+margin: 100px 0px 0px 50px;
+padding: 0%;
+width: 440px;
+font-family: system-ui;
+font-size: 40px;
+color: #F0F0F0;
+}
+#cozinhaimg{
+margin: -505px 0px 0px 590px;
+width: 960px;
+height: 526px;
+border-radius: 15px;
+}
+#acougueOtM{
+width: 1440px;
+height: 670px;
+left: 0px;
+top: 1540px;
+}
+#acouguetitulo{
+margin: 100px 0px 0px 1140px;
+padding: 0%;
+width: 440px;
+font-family: system-ui;
+font-size: 40px;
+color: #F0F0F0;
+}
+#acouguetxt{
+margin: 50px 0px 0px 1160px;
+width: 400px;
+height: 400px;
+font-family: system-ui;
+color: #FC8C00;
+}
+#acougueimg{
+margin: -480px 0px 0px 70px;
+width: 960px;
+height: 526px;
+border-radius: 15px;
+}
+.rodape{
+background:#FC8C00;
+width: auto;
+font-family: system-ui;
+height: 115px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#rodapetd{
+width: 1440px;
+height: 115px;
+}
+img{
+width: 100%;
+height: 100%;
+margin-top:9px;
+}
+.conteiners{
+float:left;
+font-size: medium;
+font-style: normal;
+font-weight:bolder;
+width:330px;
+margin-left:5px;
+height:50px ;
+}
+.conteiners3{
+float:left;
+width:30px;
+}
+.conteiners2{
+margin: 10px 20px 0px 40px;
+float:left;
+}
+#iflogin{
+height: 369px;
+margin: 0px 0px 100px 660px;
+border: 0px solid;
+}
+.entrar{
+text-align: center;
+margin: 0px 0px 60px 0px;
+}
+.cadlocallogin{
+padding: 10px 20px 0px 20px;
+}
+#emaillogin,#pswlogin{
+border-radius: 15px;
+}
+.registerbtnlogin{
+background-color: #04AA6D;
+color: white;
+padding: 16px 20px;
+margin: 115px 0px 0px 0px;
+border-radius: 10px;
+border: #04AA6D;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+.cadlocal{
+padding: 200px 20px 0px 20px;
+}
+p{
+color: #ddd;
+font-family: system-ui;
+margin: 0%;
+font-size: 20px;       
+}
+#email,#psw,#psw-repeat{
+border-radius: 15px;
+}
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #F1F1F1;
+}   
+input[type=text]:focus, input[type=password]:focus {
+background-color: #DDDDDD;
+outline: none;
+}    
+.registerbtn {
+background-color: #04AA6D;
+color: white;
+padding: 16px 20px;
+margin: 115px 0px 180px 0px;
+border-radius: 10px;
+border: #04AA6D;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}   
+.registerbtn:hover {
+opacity:1;
+}
+a {
+color: dodgerblue;
+}
+.signin {
+background-color: #f1f1f1;
+text-align: center;
+}

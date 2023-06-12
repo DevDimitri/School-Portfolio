@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOG PISANTE</title>
+    <h1>Kauê Maciel, Leonardo Makibara, Dimitri Moreira e Gabryel Vasconcelos</h1>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #fundo{
+            position:relative;
+        }
+        #dog{
+            position: absolute;
+            transform: translate();
+        }
+    </style>
+</head>
+<body>
+    <button onclick="trocar()">Andar</button>
+    <div id="fundo"></div>
+    <img src="img/cachorro_parado.gif" alt="Cachorro" id="dog">
+    <script>
+        function trocar(){
+            var dogg = document.getElementById("dog");
+            if(dogg.src.match("dogright")){
+            }
+            else{
+                dogg.src = "img/cachorro_andando_direita.gif";
+            }
+        }
+    </script>
+</body>
+</html>

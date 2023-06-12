@@ -1,0 +1,32 @@
+body{
+	margin:0px 0px 0px 20px;
+	font-family:arial;
+}
+legend{
+	font-size:20px;
+	text-align:center;
+}
+fieldset{
+	border:2px solid grey;
+	width:800px;
+}
+#txtNOME{
+	margin:0px 0px 0px 30px;
+	width:300px;
+}
+#txtCPF{
+	margin:0px 0px 0px 68px;
+}
+#txtRG{
+	margin:0px 0px 0px 76px;
+}
+#txtEND{
+	margin:0px 0px 0px 4px;
+	width:300px;
+}
+#txtNUM{
+	margin:0px 0px 0px 42px;
+}
+#txtCEP{
+	margin:0px 0px 0px 66px;
+}
